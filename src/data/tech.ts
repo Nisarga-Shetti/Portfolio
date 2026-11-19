@@ -25,14 +25,28 @@ export interface Skill {
 
 export const skillCategories: SkillCategory[] = [
   {
+    title: 'Programming Languages',
+    icon: Code2,
+    color: '#22E4FF',
+    skills: [
+      { name: 'JavaScript', icon: FileCode2, description: 'ES6+, DOM manipulation, and asynchronous programming.' },
+      { name: 'TypeScript', icon: Code2, description: 'Strongly typed JavaScript for scalable applications.' },
+      { name: 'Python', icon: Code2, description: 'Programming, scripting, and automation.' },
+      { name: 'SQL', icon: Database, description: 'Database queries and data management.' },
+      { name: 'PHP', icon: FileCode2, description: 'Server-side scripting and web development.' },
+      { name: 'C', icon: Code2, description: 'Programming fundamentals and problem solving.' },
+      { name: 'R', icon: BarChart3, description: 'Statistical computing and data analysis.' },
+    ],
+  },
+  {
     title: 'Frontend',
     icon: Code2,
     color: '#22E4FF',
     skills: [
       { name: 'HTML5', icon: Codepen, description: 'Semantic markup and modern HTML5 features.' },
       { name: 'CSS3', icon: Boxes, description: 'Responsive layouts, flexbox, grid, and animations.' },
-      { name: 'JavaScript', icon: FileCode2, description: 'ES6+, DOM manipulation, and async patterns.' },
       { name: 'React', icon: Code2, description: 'Component-driven UI with hooks and state management.' },
+      { name: 'JSX', icon: FileCode2, description: 'JavaScript XML syntax for React components.' },
     ],
   },
   {
@@ -40,9 +54,9 @@ export const skillCategories: SkillCategory[] = [
     icon: Code2,
     color: '#A855F7',
     skills: [
-      { name: 'PHP', icon: FileCode2, description: 'Server-side scripting and RESTful API development.' },
-      { name: 'Python', icon: Code2, description: 'Scripting, automation, and backend logic.' },
-      { name: 'Flask', icon: Cloud, description: 'Lightweight Python web framework for APIs.' },
+      { name: 'Node.js', icon: Server, description: 'JavaScript runtime for server-side development.' },
+      { name: 'Express.js', icon: Code2, description: 'Backend framework for building web applications and APIs.' },
+      { name: 'REST APIs', icon: Cloud, description: 'Building and integrating RESTful services.' },
     ],
   },
   {
@@ -51,7 +65,19 @@ export const skillCategories: SkillCategory[] = [
     color: '#C084FC',
     skills: [
       { name: 'MySQL', icon: Database, description: 'Relational database design and querying.' },
-      { name: 'Schema Design', icon: GitBranch, description: 'Normalized data modeling and optimization.' },
+      { name: 'DBMS', icon: Database, description: 'Database management systems and data organization.' },
+    ],
+  },
+  {
+    title: 'Data Science & Machine Learning',
+    icon: Brain,
+    color: '#22E4FF',
+    skills: [
+      { name: 'NumPy', icon: Brain, description: 'Numerical computing and array operations.' },
+      { name: 'Pandas', icon: Database, description: 'Data manipulation and analysis.' },
+      { name: 'scikit-learn', icon: Brain, description: 'Machine learning models and data preprocessing.' },
+      { name: 'Matplotlib', icon: BarChart3, description: 'Data visualization and plotting.' },
+      { name: 'Seaborn', icon: BarChart3, description: 'Statistical data visualization.' },
     ],
   },
   {
