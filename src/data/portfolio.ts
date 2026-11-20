@@ -177,6 +177,13 @@ export const projects: Project[] = [
     tech: ['JavaScript', 'HTML', 'CSS'],
     github: 'https://github.com/nisargashetti/Live-Clock',
   },
+  {
+    title: 'Time Table',
+    tag: 'Mini Project',
+    description: 'A timetable web project.',
+    tech: ['HTML'],
+    github: 'https://github.com/Nisarga-Shetti/Time-table',
+  },
 ];
 
 export const links: Link[] = [
@@ -205,4 +212,7 @@ export const loaderLines = [
   'Aligning orbit\u2026',
   'Docking complete.',
 ];
+
+
+
 
