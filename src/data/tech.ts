@@ -9,6 +9,7 @@ import {
   Boxes,
   Cloud,
   BarChart3,
+  Server,
 } from 'lucide-react';
 
 export interface SkillCategory {
@@ -92,4 +93,5 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
 ];
+
 
