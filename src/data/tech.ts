@@ -8,6 +8,7 @@ import {
   Codepen,
   Boxes,
   Cloud,
+  BarChart3,
 } from 'lucide-react';
 
 export interface SkillCategory {
@@ -91,3 +92,4 @@ export const skillCategories: SkillCategory[] = [
     ],
   },
 ];
+
