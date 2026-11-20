@@ -47,7 +47,7 @@ export interface Link {
 }
 
 export const profile = {
-  name: 'Nisarga Shetti',
+  name: 'Nisarga Nagaraj Shetti',
   role: 'Full Stack Developer',
   intro:
     'A passionate fresher Full Stack Developer focused on building modern, scalable and user-friendly web applications. I turn ideas into clean code and impactful digital experiences using the power of technology.',
@@ -205,3 +205,4 @@ export const loaderLines = [
   'Aligning orbit\u2026',
   'Docking complete.',
 ];
+
