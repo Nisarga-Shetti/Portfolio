@@ -1,4 +1,4 @@
-export interface NavItem {
+﻿export interface NavItem {
   id: string;
   label: string;
   icon: string;
@@ -56,7 +56,7 @@ export const profile = {
 };
 
 export const about = {
-  text: "I'm interested in full-stack development, problem-solving, responsive interfaces, databases, and building useful software. I enjoy turning ideas into reality — crafting clean, working applications from end to end, and continuously learning the tools that make that possible.",
+  text: "I'm interested in full-stack development, problem-solving, responsive interfaces, databases, and building useful software. I enjoy turning ideas into reality â€” crafting clean, working applications from end to end, and continuously learning the tools that make that possible.",
   features: [
     {
       icon: 'Code2',
@@ -97,13 +97,13 @@ export const education: EducationItem[] = [
     degree: 'BSc Computer Science and Mathematics',
     place: "Alva's College, Moodbidri",
     score: '85.42%',
-    period: '2021 — 2024',
+    period: '2021 â€” 2024',
   },
   {
     degree: 'PUC PCMB',
     place: 'Sri Bhuvanendra P.U. College, Karkala',
     score: '74.6%',
-    period: '2019 — 2021',
+    period: '2019 â€” 2021',
   },
   {
     degree: 'SSLC',
@@ -119,63 +119,89 @@ export const projects: Project[] = [
   {
     title: 'Construction360',
     tag: 'Project Management System',
-    description:
-      'Smart construction project management concept connecting building planning, blueprint design, project tracking and construction workflows.',
-    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/nisargashetti/Construction360',
+    description: 'A construction project management application.',
+    tech: ['PHP'],
+    github: 'https://github.com/Nisarga-Shetti/Construction360',
+    featured: true,
+  },
+  {
+    title: 'Collab-AI',
+    tag: 'Collaboration Application',
+    description: 'A collaborative application built with TypeScript.',
+    tech: ['TypeScript'],
+    github: 'https://github.com/Nisarga-Shetti/Collab-AI',
     featured: true,
   },
   {
     title: 'Online Shopping',
     tag: 'E-commerce Application',
-    description:
-      'Product browsing, authentication, cart workflows and order management.',
-    tech: ['PHP', 'MySQL', 'HTML', 'CSS', 'JavaScript'],
-    github: 'https://github.com/nisargashetti',
+    description: 'An online shopping web application.',
+    tech: ['PHP'],
+    github: 'https://github.com/Nisarga-Shetti/Online-Shopping',
     featured: true,
   },
   {
-    title: 'Student Management System',
-    tag: 'Information Management',
-    description:
-      'Organizes student records and administrative workflows.',
-    tech: ['PHP', 'MySQL'],
-    github: 'https://github.com/nisargashetti/Student-Management-System',
+    title: 'QR Code Generator',
+    tag: 'Utility Application',
+    description: 'A tool for generating QR codes.',
+    tech: ['CSS'],
+    github: 'https://github.com/Nisarga-Shetti/QR-Code-Generator',
   },
   {
-    title: 'CarConnect',
-    tag: 'Vehicle Web App',
-    description: 'Browsing and connecting with vehicle listings.',
-    tech: ['PHP', 'MySQL', 'JavaScript'],
-    github: 'https://github.com/nisargashetti/CarConnect',
+    title: 'Movie Searcher',
+    tag: 'Search Application',
+    description: 'A movie search web application.',
+    tech: ['JavaScript'],
+    github: 'https://github.com/Nisarga-Shetti/Movie-Searcher',
+  },
+  {
+    title: 'Weather Application',
+    tag: 'Weather Application',
+    description: 'A web application for weather information.',
+    tech: ['JavaScript'],
+    github: 'https://github.com/Nisarga-Shetti/Weather-Application',
+  },
+  {
+    title: 'Quiz Application',
+    tag: 'Quiz Application',
+    description: 'An interactive quiz application.',
+    tech: ['JavaScript'],
+    github: 'https://github.com/Nisarga-Shetti/Quiz-Application',
+  },
+  {
+    title: 'Expense Tracker',
+    tag: 'Finance Utility',
+    description: 'An application for tracking expenses.',
+    tech: ['JavaScript'],
+    github: 'https://github.com/Nisarga-Shetti/Expense-Tracker',
+  },
+  {
+    title: 'Password Generator',
+    tag: 'Utility Application',
+    description: 'A tool for generating passwords.',
+    tech: ['JavaScript'],
+    github: 'https://github.com/Nisarga-Shetti/Password-Generator',
+  },
+  {
+    title: 'Responsive Login Signup',
+    tag: 'Authentication UI',
+    description: 'A responsive login and signup interface.',
+    tech: ['CSS'],
+    github: 'https://github.com/Nisarga-Shetti/Responsive-login-signup-',
   },
   {
     title: 'Job Portal',
+    tag: 'Job Application',
+    description: 'A job portal web application.',
+    tech: [],
+    github: 'https://github.com/Nisarga-Shetti/Job-Portal',
+  },
+  {
+    title: 'Form',
     tag: 'Web Application',
-    description: 'Connecting job seekers with opportunities.',
-    tech: ['PHP', 'MySQL', 'HTML', 'CSS'],
-    github: 'https://github.com/nisargashetti/Job-Portal',
-  },
-  {
-    title: 'Amazon Clone',
-    tag: 'E-commerce UI',
-    description: 'Product presentation and shopping UI.',
-    tech: ['React', 'JavaScript', 'CSS'],
-    github: 'https://github.com/nisargashetti/Amazon-Clone',
-  },
-  {
-    title: 'Calculator',
-    tag: 'Utility App',
-    description: 'Interactive calculations and interface design.',
-    tech: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/nisargashetti/Calculator',
-  },
-  {
-    title: 'Live Clock',
-    tag: 'Mini Project',
-    description: 'Real-time clock showing JavaScript date and time handling.',
-    tech: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/nisargashetti/Live-Clock',
+    description: 'A form-based web application.',
+    tech: ['PHP'],
+    github: 'https://github.com/Nisarga-Shetti/Form',
   },
   {
     title: 'Time Table',
@@ -183,6 +209,27 @@ export const projects: Project[] = [
     description: 'A timetable web project.',
     tech: ['HTML'],
     github: 'https://github.com/Nisarga-Shetti/Time-table',
+  },
+  {
+    title: 'Simple Calculator',
+    tag: 'Utility Application',
+    description: 'A simple calculator application.',
+    tech: ['HTML'],
+    github: 'https://github.com/Nisarga-Shetti/Simple-calculator',
+  },
+  {
+    title: 'Live Clock',
+    tag: 'Mini Project',
+    description: 'A live clock application.',
+    tech: ['HTML'],
+    github: 'https://github.com/Nisarga-Shetti/Live-Clock',
+  },
+  {
+    title: 'Calculator',
+    tag: 'Utility Application',
+    description: 'A calculator web project.',
+    tech: ['HTML'],
+    github: 'https://github.com/Nisarga-Shetti/Calculator',
   },
 ];
 
@@ -197,14 +244,14 @@ export const links: Link[] = [
 ];
 
 export const hudLocations: Record<string, string> = {
-  home: 'SYS ONLINE · EARTH ORBIT',
-  about: 'SOL SYSTEM · OVERVIEW',
-  skills: 'SATURN · RING DOCK',
-  education: 'MARS · ASTEROID BELT',
-  projects: 'JUPITER · GAS GIANT',
-  certifications: 'NEPTUNE · OUTER REACH',
-  resume: 'DEEP SPACE · SPIRAL GALAXY',
-  contact: 'EARTH ORBIT · HOME',
+  home: 'SYS ONLINE Â· EARTH ORBIT',
+  about: 'SOL SYSTEM Â· OVERVIEW',
+  skills: 'SATURN Â· RING DOCK',
+  education: 'MARS Â· ASTEROID BELT',
+  projects: 'JUPITER Â· GAS GIANT',
+  certifications: 'NEPTUNE Â· OUTER REACH',
+  resume: 'DEEP SPACE Â· SPIRAL GALAXY',
+  contact: 'EARTH ORBIT Â· HOME',
 };
 
 export const loaderLines = [
@@ -212,6 +259,7 @@ export const loaderLines = [
   'Aligning orbit\u2026',
   'Docking complete.',
 ];
+
 
 
 
