@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, FileText, Rocket } from 'lucide-react';
 import { profile } from '@/data/portfolio';
 import { ScrambleText } from '@/components/ScrambleText';
+import { ConnectButtons } from '@/components/ConnectButtons';
 
 interface HeroProps {
   active: boolean;
@@ -34,14 +35,14 @@ export function Hero({ active, reducedMotion }: HeroProps) {
           {profile.intro}
         </p>
 
-        <div className="flex flex-wrap gap-4">
+        <div className="flex flex-wrap items-center gap-4">
           <a
             href="#projects"
             onClick={(e) => {
               e.preventDefault();
               document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' });
             }}
-            className="gradient-border-btn flex items-center gap-2 rounded-xl px-6 py-3 font-mono text-sm font-semibold text-cyan transition-transform hover:scale-105"
+            className="gradient-border-btn flex items-center gap-2 rounded-xl px-6 py-3 font-mono text-sm font-semibold text-cyan transition-transform hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-void"
           >
             <Rocket className="h-4 w-4" />
             View Projects
@@ -49,11 +50,12 @@ export function Hero({ active, reducedMotion }: HeroProps) {
           <a
             href={profile.resumePath}
             download
-            className="flex items-center gap-2 rounded-xl border border-cyan/30 bg-deep-navy/60 px-6 py-3 font-mono text-sm font-semibold text-text transition-all hover:border-cyan hover:bg-deep-navy/80 hover:shadow-[0_0_20px_rgba(34,228,255,0.3)]"
+            className="flex items-center gap-2 rounded-xl border border-cyan/30 bg-deep-navy/60 px-6 py-3 font-mono text-sm font-semibold text-text transition-all hover:border-cyan hover:bg-deep-navy/80 hover:shadow-[0_0_20px_rgba(34,228,255,0.3)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-void"
           >
             <FileText className="h-4 w-4" />
             Download Resume
           </a>
+          <ConnectButtons variant="icons" />
         </div>
 
         <div className="mt-12 hidden items-center gap-2 md:flex">

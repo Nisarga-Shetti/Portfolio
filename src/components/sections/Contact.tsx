@@ -2,6 +2,7 @@ import { useState, type FormEvent } from 'react';
 import { links } from '@/data/portfolio';
 import { GlassPanel } from '@/components/GlassPanel';
 import { ScrambleText } from '@/components/ScrambleText';
+import { ConnectButtons } from '@/components/ConnectButtons';
 import { useReveal } from '@/lib/hooks';
 import { supabase } from '@/lib/supabase';
 import { Mail, Github, Linkedin, Send, CheckCircle2, Loader2, AlertCircle } from 'lucide-react';
@@ -189,7 +190,7 @@ export function Contact({ active, reducedMotion }: ContactProps) {
                   href={link.url}
                   target={link.url.startsWith('mailto:') ? undefined : '_blank'}
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 rounded-lg border border-cyan/20 bg-deep-navy/40 px-4 py-2.5 font-mono text-xs font-medium text-muted transition-all hover:border-cyan hover:text-cyan hover:shadow-[0_0_12px_rgba(34,228,255,0.2)]"
+                  className="flex items-center gap-2 rounded-lg border border-cyan/20 bg-deep-navy/40 px-4 py-2.5 font-mono text-xs font-medium text-muted transition-all hover:border-cyan hover:text-cyan hover:shadow-[0_0_12px_rgba(34,228,255,0.2)] focus:outline-none focus-visible:ring-2 focus-visible:ring-cyan focus-visible:ring-offset-2 focus-visible:ring-offset-void"
                   aria-label={link.label}
                 >
                   <Icon className="h-4 w-4" />
@@ -197,6 +198,11 @@ export function Contact({ active, reducedMotion }: ContactProps) {
                 </a>
               );
             })}
+          </div>
+
+          <div className="mt-6 border-t border-cyan/10 pt-6">
+            <p className="mb-3 font-mono text-xs uppercase tracking-[0.2em] text-muted">Connect with me</p>
+            <ConnectButtons variant="row" />
           </div>
         </GlassPanel>
       </div>

@@ -1,4 +1,4 @@
-﻿export interface NavItem {
+export interface NavItem {
   id: string;
   label: string;
   icon: string;
@@ -56,7 +56,7 @@ export const profile = {
 };
 
 export const about = {
-  text: "I'm interested in full-stack development, problem-solving, responsive interfaces, databases, and building useful software. I enjoy turning ideas into reality â€” crafting clean, working applications from end to end, and continuously learning the tools that make that possible.",
+  text: "I'm interested in full-stack development, problem-solving, responsive interfaces, databases, and building useful software. I enjoy turning ideas into reality — crafting clean, working applications from end to end, and continuously learning the tools that make that possible.",
   features: [
     {
       icon: 'Code2',
@@ -97,13 +97,13 @@ export const education: EducationItem[] = [
     degree: 'BSc Computer Science and Mathematics',
     place: "Alva's College, Moodbidri",
     score: '85.42%',
-    period: '2021 â€” 2024',
+    period: '2021 — 2024',
   },
   {
     degree: 'PUC PCMB',
     place: 'Sri Bhuvanendra P.U. College, Karkala',
     score: '74.6%',
-    period: '2019 â€” 2021',
+    period: '2019 — 2021',
   },
   {
     degree: 'SSLC',
@@ -116,7 +116,7 @@ export const education: EducationItem[] = [
 export const certifications: Certification[] = [];
 
 export const projects: Project[] = [
-  {
+   {
     title: 'Construction360',
     tag: 'Project Management System',
     description: 'A construction project management application.',
@@ -243,15 +243,24 @@ export const links: Link[] = [
   },
 ];
 
+export const socialLinks: Link[] = [
+  { label: 'GitHub', url: 'https://github.com/Nisarga-Shetti', icon: 'Github' },
+  {
+    label: 'LinkedIn',
+    url: 'https://www.linkedin.com/in/nisarga-nagaraj-shetti933',
+    icon: 'Linkedin',
+  },
+];
+
 export const hudLocations: Record<string, string> = {
-  home: 'SYS ONLINE Â· EARTH ORBIT',
-  about: 'SOL SYSTEM Â· OVERVIEW',
-  skills: 'SATURN Â· RING DOCK',
-  education: 'MARS Â· ASTEROID BELT',
-  projects: 'JUPITER Â· GAS GIANT',
-  certifications: 'NEPTUNE Â· OUTER REACH',
-  resume: 'DEEP SPACE Â· SPIRAL GALAXY',
-  contact: 'EARTH ORBIT Â· HOME',
+  home: 'SYS ONLINE · EARTH ORBIT',
+  about: 'SOL SYSTEM · OVERVIEW',
+  skills: 'SATURN · RING DOCK',
+  education: 'MARS · ASTEROID BELT',
+  projects: 'JUPITER · GAS GIANT',
+  certifications: 'NEPTUNE · OUTER REACH',
+  resume: 'DEEP SPACE · SPIRAL GALAXY',
+  contact: 'EARTH ORBIT · HOME',
 };
 
 export const loaderLines = [
@@ -259,8 +268,3 @@ export const loaderLines = [
   'Aligning orbit\u2026',
   'Docking complete.',
 ];
-
-
-
-
-
