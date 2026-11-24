@@ -174,13 +174,22 @@ export function UniverseCanvas({
     void document.fonts.ready.then(() => {
       centers = measureSectionCenters();
     });
-
+   
     let raf = 0;
     let last = performance.now();
     let elapsed = 0;
 
+    const FRAME_INTERVAL = isMobile ? 1000 / 30 : 1000 / 60;
+
     const tick = (now: number) => {
-      const dt = Math.min((now - last) / 1000, 0.1);
+      const frameElapsed = now - last;
+
+      if (frameElapsed < FRAME_INTERVAL) {
+        raf = requestAnimationFrame(tick);
+        return;
+      }
+
+      const dt = Math.min(frameElapsed / 1000, 0.1);
 
       last = now;
       elapsed += dt;
@@ -190,11 +199,7 @@ export function UniverseCanvas({
 
       const scrollCenter = window.scrollY + window.innerHeight / 2;
 
-      const target = sampleJourney(
-        centers,
-        keys,
-        scrollCenter
-      );
+      const target = sampleJourney(centers, keys, scrollCenter);
 
       const ease = reduced ? 1 : 1 - Math.exp(-2 * dt);
 
