@@ -172,7 +172,9 @@ export function UniverseCanvas({
     };
 
     void document.fonts.ready.then(() => {
-      centers = measureSectionCenters();
+      if (!document.hidden) {
+        centers = measureSectionCenters();
+      }
     });
    
     let raf = 0;
