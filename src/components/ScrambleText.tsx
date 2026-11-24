@@ -10,41 +10,50 @@ interface ScrambleTextProps {
   reducedMotion?: boolean;
 }
 
-export function ScrambleText({ text, active, className = '', as = 'span', reducedMotion = false }: ScrambleTextProps) {
+export function ScrambleText({
+  text,
+  active,
+  className = '',
+  as = 'span',
+  reducedMotion = false,
+}: ScrambleTextProps) {
   const [display, setDisplay] = useState(text);
   const Tag = as;
 
   useEffect(() => {
-    if (reducedMotion) {
-      setDisplay(text);
-      return;
-    }
-    if (!active) {
+    if (reducedMotion || !active) {
       setDisplay(text);
       return;
     }
 
     let frame = 0;
     const totalFrames = 18;
-    const interval = setInterval(() => {
+
+    const interval = window.setInterval(() => {
       frame++;
+
       const progress = frame / totalFrames;
+
       const scrambled = text
         .split('')
         .map((char, i) => {
           if (char === ' ') return ' ';
           if (i / text.length < progress) return char;
+
           return CHARS[Math.floor(Math.random() * CHARS.length)];
         })
         .join('');
-      setDisplay(scrambled);
+
       if (frame >= totalFrames) {
         setDisplay(text);
-        clearInterval(interval);
+        window.clearInterval(interval);
+        return;
       }
+
+      setDisplay(scrambled);
     }, 40);
 
-    return () => clearInterval(interval);
+    return () => window.clearInterval(interval);
   }, [active, text, reducedMotion]);
 
   return <Tag className={className}>{display}</Tag>;
