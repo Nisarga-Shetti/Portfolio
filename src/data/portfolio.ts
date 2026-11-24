@@ -52,7 +52,7 @@ export const profile = {
   intro:
     'A passionate fresher Full Stack Developer focused on building modern, scalable and user-friendly web applications. I turn ideas into clean code and impactful digital experiences using the power of technology.',
   email: 'nisarga.shetti@example.com',
-  resumePath: '/Nisarga_Shetti_Resume.pdf',
+  resumePath: '/Nisarga_Nagaraj_Shetti_Resume.pdf',
 };
 
 export const about = {
