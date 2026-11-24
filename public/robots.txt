@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://nisarganshetti.vercel.app/sitemap.xml
